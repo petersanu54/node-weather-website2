@@ -6,7 +6,7 @@ const forecast = (latitude,longitude,callback)=>{
             console.log(error)
         }else{
             callback(undefined,{
-                weather : body.current.weather_descriptions[0] + '. Current temperature is '+ body.current.temperature+ ' degrees celcius with rain chances of '+ body.current.precip + ' %'
+                weather : body.current.weather_descriptions[0] + '. Current temperature of the city is '+ body.current.temperature+ ' degrees celcius with rain chances of '+ body.current.precip + ' %'
             })
         }
     })
